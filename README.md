@@ -23,7 +23,7 @@ Attributes
 * `node['bucky']['statsd_enabled'] = "True"` - enable statsd
 * `node['bucky']['statsd_ip'] = "127.0.0.1"` -  statsd bind ip
 * `node['bucky']['statsd_port'] = 8125` - statsd port
-* `node['bucky']['collectd_enabled'] = "True" -  enable collectd
+* `node['bucky']['collectd_enabled'] = "True"` -  enable collectd
 * `node['bucky']['collectd_ip'] = "127.0.0.1"` -  collectd bind ip
 * `node['bucky']['collectd_port'] = 25826` -  collectd port 
 * `node['bucky']['graphite_ip'] = "127.0.0.1"`` -  graphite bind ip
