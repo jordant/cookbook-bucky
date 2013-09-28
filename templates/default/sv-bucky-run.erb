@@ -1,0 +1,3 @@
+#!/bin/sh
+exec 2>&1
+exec chpst -u root:root -l /var/lock/bucky.lock -- /usr/local/bin/bucky /etc/bucky.conf

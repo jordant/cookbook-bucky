@@ -1,0 +1,6 @@
+#!/bin/sh
+PIDFILE="/var/run/bucky.pid"
+
+if [ -e $PIDFILE ]; then
+    rm -v $PIDFILE
+fi
