@@ -32,5 +32,5 @@ template "/etc/bucky.conf" do
 end
 
 runit_service "bucky" do
-	  finish_script true
+	  finish true
 end
