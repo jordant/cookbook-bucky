@@ -32,5 +32,6 @@ template "/etc/bucky.conf" do
 end
 
 runit_service "bucky" do
+    default_logger true
 	  finish true
 end
