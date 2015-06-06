@@ -7,9 +7,9 @@ log_level = "INFO"
 full_trace = False
 
 # Basic metricsd conifguration
-metricsd_ip = "<%= @node['bucky']['metricsd_ip'] %>"
-metricsd_port = <%= @node['bucky']['metricsd_port'] %>
-metricsd_enabled = <%= @node['bucky']['metricsd_enabled'] %>
+metricsd_ip = "<%= node['bucky']['metricsd_ip'] %>"
+metricsd_port = <%= node['bucky']['metricsd_port'] %>
+metricsd_enabled = <%= node['bucky']['metricsd_enabled'] %>
 
 # The default interval between flushes of metric data to Graphite
 metricsd_default_interval = 10.0
@@ -25,9 +25,9 @@ metricsd_default_interval = 10.0
 metricsd_handlers = []
 
 # Basic collectd configuration
-collectd_ip = "<%= @node['bucky']['collectd_ip'] %>"
-collectd_port = <%= @node['bucky']['collectd_port'] %>
-collectd_enabled = <%= @node['bucky']['collectd_enabled'] %>
+collectd_ip = "<%= node['bucky']['collectd_ip'] %>"
+collectd_port = <%= node['bucky']['collectd_port'] %>
+collectd_enabled = <%= node['bucky']['collectd_enabled'] %>
 
 # A list of file names for collectd types.db
 # files.
@@ -42,16 +42,16 @@ collectd_converters = {}
 collectd_use_entry_points = True
 
 # Basic statsd configuration
-statsd_ip = "<%= @node['bucky']['statsd_ip'] %>"
-statsd_port = <%= @node['bucky']['statsd_port'] %>
-statsd_enabled = <%= @node['bucky']['statsd_enabled'] %>
+statsd_ip = "<%= node['bucky']['statsd_ip'] %>"
+statsd_port = <%= node['bucky']['statsd_port'] %>
+statsd_enabled = <%= node['bucky']['statsd_enabled'] %>
 
 # How often stats should be flushed to Graphite.
 statsd_flush_time = 10.0
 
 # Basic Graphite configuration
-graphite_ip = "<%= @node['bucky']['graphite_ip'] %>"
-graphite_port = <%= @node['bucky']['graphite_port'] %>
+graphite_ip = "<%= node['bucky']['graphite_ip'] %>"
+graphite_port = <%= node['bucky']['graphite_port'] %>
 
 # If the Graphite connection fails these numbers define how it
 # will reconnect. The max reconnects applies each time a
