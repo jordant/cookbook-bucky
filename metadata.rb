@@ -1,3 +1,4 @@
+name             "bucky"
 maintainer       "Jordan Tardif"
 maintainer_email "jordan.tardif@gmail.com"
 license          "All rights reserved"
